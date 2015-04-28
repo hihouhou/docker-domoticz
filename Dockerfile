@@ -17,7 +17,9 @@ RUN apt-get update && \
 RUN svn checkout svn://svn.code.sf.net/p/domoticz/code/trunk/ domoticz
 RUN cd domoticz && cmake -DCMAKE_BUILD_TYPE=Release .
 RUN cd domoticz && make
+#RUN ln -s /domoticz/domoticz /usr/bin/domoticz
 
+ 
 EXPOSE 8080
 
-CMD ['domoticz']
+CMD ["/domoticz/domoticz", "-www 8080"]
