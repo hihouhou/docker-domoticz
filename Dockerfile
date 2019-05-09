@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV DOMOTICZ_VERSION 4.10659
+ENV DOMOTICZ_VERSION 4.10693
 
 # Update & install packages
 RUN apt-get update && \
