@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV DOMOTICZ_VERSION 2021.1
+ENV DOMOTICZ_VERSION 2022.1
 
 # Update & install packages
 RUN apt-get update && \
