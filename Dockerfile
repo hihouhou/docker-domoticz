@@ -9,7 +9,7 @@ FROM debian:latest
 
 LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
-ENV DOMOTICZ_VERSION 2024.7
+ENV DOMOTICZ_VERSION=2024.7
 
 # Update & install packages
 RUN apt-get update && \
